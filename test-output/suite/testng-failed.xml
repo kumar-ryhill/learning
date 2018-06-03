@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [suite]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="URL" value=" http://qaclickacademy.com/practice.php"/>
+  <test name="Regression(failed)">
+    <classes>
+      <class name="com.Am.Basetest.chrome">
+        <methods>
+          <include name="launch"/>
+        </methods>
+      </class> <!-- com.Am.Basetest.chrome -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [suite] -->
