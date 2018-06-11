@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="practice.learning.ApiTesting">
+      <class name="Academy.LoginUserTest">
         <methods>
-          <include name="postrequest"/>
-          <include name="getdata"/>
+          <include name="basePageNavigation" invocation-numbers="0"/>
         </methods>
-      </class> <!-- practice.learning.ApiTesting -->
+      </class> <!-- Academy.LoginUserTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

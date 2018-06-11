@@ -1,4 +1,4 @@
-package practice.learning;
+package com.API;
 
 import static io.restassured.RestAssured.given;
 import io.restassured.RestAssured;
@@ -42,14 +42,15 @@ public class ApiTesting extends Resources {
 	@Test
 
 	void postrequest() {
-		String b = Payload.payLoadData();
+		String b = Payload.payLoadDatajson();
 		RestAssured.baseURI = prop.getProperty("HOST");
 		// "https://maps.googleapis.com";
 
 		RequestSpecification request = RestAssured.given();
 
-		Response res = given().queryParam("key", prop.getProperty("KEY")).body(b).when()
-				.post(Resources.placeResourceData()).then().assertThat().statusCode(200).and()
+		Response res = given().queryParam("key", prop.getProperty("KEY")).body(b).		
+		when()
+				.post(Resources.placeResourceDatajson()).then().assertThat().statusCode(200).and()
 				.contentType(ContentType.JSON).and().body("status", equalTo("OK")).and().extract().response();
 		String asString = res.asString();
 

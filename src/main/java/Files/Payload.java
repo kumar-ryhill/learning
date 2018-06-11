@@ -1,9 +1,13 @@
 package Files;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 public class Payload 
 {
 	
-	public static  String payLoadData()
+	public static  String payLoadDatajson()
 	{
 		String b =  ("{"+
 				  "\"location\": {"+
@@ -23,4 +27,10 @@ public class Payload
 				
 	}
 
+	
+	
+
+	
+	
+	
 }
