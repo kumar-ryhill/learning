@@ -1,22 +1,14 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-
-<suite name="suite" verbose="1">
-	<parameter name="browser" value="chrome" />
-	<parameter name="URL" value="
-http://qaclickacademy.com/practice.php" />
-	<test name="Regression">
-		<classes>
-		     <class name="com.Am.Basetest.chrome"/>
-			 <!-- <class name="Scenario_Component.Scenario_login" /> 
-			<class name="Scenario_Component.Scenario_plp"/> -->
-
- 
-		</classes>
-
-
-
-
-	</test>
- 
-
-</suite>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <!-- <class name="com.API.APIXML"/>
+      <class name="com.API.Base4"/>
+      <class name="com.API.FileReading_Writing"/>
+      <class name="com.API.ApiTesting"/>
+      <class name="resource.Base"/> -->
+      <class name="Academy.LoginUserTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

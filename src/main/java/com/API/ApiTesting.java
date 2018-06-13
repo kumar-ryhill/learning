@@ -9,6 +9,7 @@ import io.restassured.specification.RequestSpecification;
 
 import static org.hamcrest.Matchers.equalTo;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -35,8 +36,12 @@ public class ApiTesting extends Resources {
 	@BeforeTest
 	public void getdata() throws IOException {
 
-		FileInputStream fi = new FileInputStream("D:\\Automation\\learning\\src\\main\\java\\Files\\env.properties");
-		prop.load(fi);
+		/*FileInputStream fi = new FileInputStream("D:\\Automation\\learning\\src\\main\\java\\Files\\env.properties");
+		prop.load(fi);*/
+		
+		FileInputStream fi = new FileInputStream(
+				System.getProperty("user.dir") + File.separator + "property" + File.separator + "data.properties");
+
 	}
 
 	@Test

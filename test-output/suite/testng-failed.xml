@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [suite]">
-  <parameter name="browser" value="chrome"/>
-  <parameter name="URL" value=" http://qaclickacademy.com/practice.php"/>
-  <test name="Regression(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
-      <class name="com.Am.Basetest.chrome">
+      <class name="Academy.LoginUserTest">
         <methods>
-          <include name="launch"/>
+          <include name="beforetest"/>
+          <include name="basePageNavigation" invocation-numbers="1"/>
         </methods>
-      </class> <!-- com.Am.Basetest.chrome -->
+      </class> <!-- Academy.LoginUserTest -->
     </classes>
-  </test> <!-- Regression(failed) -->
-</suite> <!-- Failed suite [suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

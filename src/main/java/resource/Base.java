@@ -15,15 +15,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class Base {
 	public WebDriver driver;
 	String chromeExe;
+	public Properties prop;
 
 	@Test
 	public WebDriver initializeDriver() throws IOException {
-		Properties prop = new Properties();
+	 prop = new Properties();
 
 		FileInputStream fi = new FileInputStream(
 				System.getProperty("user.dir") + File.separator + "property" + File.separator + "data.properties");
