@@ -30,21 +30,21 @@ import com.jayway.restassured.path.json.JsonPath;
 import Files.Payload;
 import Files.Resources;
 
-public class ApiTesting extends Resources {
+public class PostApiTesting extends Resources {
 	Properties prop = new Properties();
 
 	@BeforeTest
 	public void getdata() throws IOException {
 
-		/*FileInputStream fi = new FileInputStream("D:\\Automation\\learning\\src\\main\\java\\Files\\env.properties");
-		prop.load(fi);*/
+		FileInputStream fi = new FileInputStream("D:\\Automation\\learning\\src\\main\\java\\Files\\env.properties");
+		prop.load(fi);
 		
-		FileInputStream fi = new FileInputStream(
+		/*FileInputStream fi = new FileInputStream(
 				System.getProperty("user.dir") + File.separator + "property" + File.separator + "data.properties");
-
+*/
 	}
 
-	@Test
+	@Test()
 
 	void postrequest() {
 		String b = Payload.payLoadDatajson();

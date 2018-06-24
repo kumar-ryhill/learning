@@ -1,5 +1,7 @@
 package Files;
 
+import io.restassured.specification.RequestSpecification;
+
 public class Resources
 {
 	protected static String placeResourceDatajson()

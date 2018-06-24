@@ -40,7 +40,7 @@ public class Base4
 			   int count=js.get("results.size()");
 			   for(int i=0;i<count;i++)
 			   {
-				  System.out.println(js.get("results["+i+"].name"));
+				 // System.out.print(js.get("results["+i+"].name"));
 			   }
 			   System.out.println(count);
 			       
